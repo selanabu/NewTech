@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  background-color: #0b2443;
+  color: #111827;
+}
+
+.hq_header {
+  position: sticky;
+  top: 0;
+  z-index: 110;
+  background-color: #0b2443;
+  color: #f9fafb;
+  padding: 14px 32px;
+  border-bottom: 1px solid #1f2937;
+}
+
+.hq_header h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.hq_sidebar {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 80px;
+  bottom: 0;
+  background-color: #102a4a;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav_btn {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius:3px;
+  border: none;
+  background-color: #1b40a5;
+  color: #f9fafb;
+  cursor: pointer;
+}
+
+.nav_btn:hover {
+  background-color: #2563eb;
+}
+
+.hq_main {
+  margin-left: 110px;
+  padding: 32px;
+  min-height: 600vh;
+  background-color: #e5edf3;
+}
+
+.panel {
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 20px 24px;
+  margin-bottom: 32px;
+}
+
+
+.agent_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.agent_item {
+  background-color: #dbeafe;
+  padding: 10px 16px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  transition: background-color 0.15s ease, font-weight 0.15s ease;
+  cursor: pointer;
+}
+
+.agent_item::before {
+  content: "🕶 ";
+  margin-right: 4px;
+}
+
+.agent_item:nth-child(odd) {
+  background-color: #c7ddff;
+}
+
+.agent_item:hover {
+  background-color: #9cc3ff;
+  font-weight: 700;
+}
+
+.field_deployment {
+  position: relative;
+  height: 80px;
+}
+
+.deployment_note {
+  position: relative;
+  left: 6px;
+  color: #6b7280;
+}
+
+.agent_zulu_card {
+  position: absolute;
+  right: 15px;
+  top: -4px;
+  transform: translateY(-50%);
+  background-color: #fed7aa;
+  padding: 8px 16px;
+  border-radius: 3px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+  font-weight: 600;
+  font-size: 12px;
+
+}
+
+
+#secret {
+  display: none;
+}
+
+#toggle:checked + label + #secret {
+  display: block;
+}
