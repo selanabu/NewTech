@@ -82,3 +82,20 @@ function Century(year) {
 
 }
 console.log(Century(1600));
+
+//// Ex2.7 -  Basic Math
+function BasicMath(operation, value1, value2) {
+    switch (operation) {
+        case "+":
+            return value1 + value2;
+        case "-":
+            return value1 - value2;
+        case "*":
+            return value1 * value2;
+        case "/":
+            return value1 / value2;
+    }
+}
+
+console.log(BasicMath("+", 4, 7));
+
