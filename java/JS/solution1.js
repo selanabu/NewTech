@@ -108,3 +108,17 @@ function nb_year(p0, percent, aug, p) {
     return n;
 }
 console.log(nb_year(1500000, 2.5, 10000, 2000000));
+
+
+/////Ex3.2 - People on the Bus - i dont undersand the task because  there is no examples
+function PeopleOnBus(busStops) {
+    let lastPeople = 0;
+    for (let i = 0; i < busStops.length; i++) {
+        lastPeople += busStops[i][0];
+        lastPeople -= busStops[i][1];
+    }
+    return lastPeople;
+}
+console.log(PeopleOnBus([[10,0],[3,5],[5,8]]));
+
+
