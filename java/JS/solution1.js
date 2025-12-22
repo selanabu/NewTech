@@ -122,3 +122,27 @@ function PeopleOnBus(busStops) {
 console.log(PeopleOnBus([[10,0],[3,5],[5,8]]));
 
 
+/////Ex4.1 1 - Fibonacci - 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, … 
+
+function Fibonacci(n) {
+    let sum =0;
+    let prev =1;
+    if (n === 0) {
+        return 0;
+    }   
+    if (n === 1) {
+        return 1;
+    }   
+
+    while (n>0){
+        let temp = sum;
+        sum = sum + prev;
+        prev = temp;
+        n--;
+    }
+    return sum;
+}
+console.log(Fibonacci(6));
+
+
+
