@@ -72,3 +72,13 @@ function Summation(num) {
 }
 console.log(Summation(8));
 
+/////Ex2.6 - Years and Centuries
+function Century(year) {
+    if (year % 100 === 0) {
+        return year / 100;
+    }else{
+        return Math.ceil(year / 100);
+    }
+
+}
+console.log(Century(1600));
