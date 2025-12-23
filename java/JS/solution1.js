@@ -1,5 +1,5 @@
 
-///// Ex1.1 - Yes or No
+///// Ex1.1 - Yes or No       num1
 function YesOrNo(bool){
     if (bool === true){
         return "Yes";
@@ -11,7 +11,7 @@ function YesOrNo(bool){
 console.log(YesOrNo(true));
 
 
-///// Ex2.1 - Sum of two lowest positive integers
+///// Ex2.1 - Sum of two lowest positive integers   num2
 function SumOfLowestNumbers(numbers) {
  let sortedNumbers = numbers.sort((a, b) => a - b);
  return sortedNumbers[0]+sortedNumbers[1];
@@ -20,7 +20,7 @@ function SumOfLowestNumbers(numbers) {
 console.log(SumOfLowestNumbers([19, 5, 42, 2, 77])); // Output: 7
 
 
-/////Ex2.2 - One and Zero - Binary
+/////Ex2.2 - One and Zero - Binary  num3
 function BinaryArrayToNumber(arr) {
    let k = 1;
    let i = arr.length - 1;
@@ -37,7 +37,7 @@ function BinaryArrayToNumber(arr) {
 console.log(BinaryArrayToNumber([1,0,1,1])); 
 
 
-///// Ex2.3 - Find the Next Perfect Square
+///// Ex2.3 - Find the Next Perfect Square  num4
 function FindNextPerfectSquare(sq) {
     let root = Math.sqrt(sq);
     if (Number.isInteger(root)) {
@@ -49,7 +49,7 @@ function FindNextPerfectSquare(sq) {
 console.log(FindNextPerfectSquare(11));
 
 
-/////Ex2.4 - Unique
+/////Ex2.4 - Unique  num5
 function Uniq(arr) {
     arr.sort((a, b) => a - b);
     if (arr[0] !== arr[1]) {
@@ -61,7 +61,7 @@ function Uniq(arr) {
 }
 console.log(Uniq([ 1, 1, 1, 0.55, 1, 1 ]));
 
-/////Ex2.5 - Summation
+/////Ex2.5 - Summation  num6
 function Summation(num) {
     let sum = num;
     while (num > 0) {
@@ -72,7 +72,7 @@ function Summation(num) {
 }
 console.log(Summation(8));
 
-/////Ex2.6 - Years and Centuries
+/////Ex2.6 - Years and Centuries  num7
 function Century(year) {
     if (year % 100 === 0) {
         return year / 100;
@@ -83,7 +83,7 @@ function Century(year) {
 }
 console.log(Century(1600));
 
-//// Ex2.7 -  Basic Math
+//// Ex2.7 -  Basic Math  num8
 function BasicMath(operation, value1, value2) {
     switch (operation) {
         case "+":
@@ -99,7 +99,7 @@ function BasicMath(operation, value1, value2) {
 
 console.log(BasicMath("+", 4, 7));
 
-//// Ex3.1 - Growth Of population
+//// Ex3.1 - Growth Of population  num9
 function nb_year(p0, percent, aug, p) {
     let n = 0;
     while (p0 < p) {
@@ -110,7 +110,7 @@ function nb_year(p0, percent, aug, p) {
 console.log(nb_year(1500000, 2.5, 10000, 2000000));
 
 
-/////Ex3.2 - People on the Bus - i dont undersand the task because  there is no examples
+/////Ex3.2 - People on the Bus - i dont undersand the task because  there is no examples  num10
 function PeopleOnBus(busStops) {
     let lastPeople = 0;
     for (let i = 0; i < busStops.length; i++) {
@@ -122,7 +122,7 @@ function PeopleOnBus(busStops) {
 console.log(PeopleOnBus([[10,0],[3,5],[5,8]]));
 
 
-/////Ex4.1 1 - Fibonacci - 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, … 
+/////Ex4.1 1 - Fibonacci - 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, …    num 11
 
 function Fibonacci(n) {
     let sum =0;
@@ -148,7 +148,7 @@ console.log(Fibonacci(6));
 ////function Tribonacci(n) 
 
 
-////Ex5.1 - trimming string 
+////Ex5.1 - trimming string    num12
 function TrimString(str){
     let size = str.length;
     str = str.slice(1, size - 1);
@@ -156,7 +156,7 @@ function TrimString(str){
 }
 console.log(TrimString("SELAN"));
 
-////Ex5.2 - String Repeat 
+////Ex5.2 - String Repeat  num13
 function repeatStr(n, str){
     let  result ="";
     while(n>0){
@@ -167,7 +167,7 @@ function repeatStr(n, str){
 }
 console.log(repeatStr(5, "Hello"));
 
-////Ex5.3 - To Camel Case 
+////Ex5.3 - To Camel Case  num14
 function toCamelCase(str){
     let result ="";
     for (let i =0; i<str.length; i++){
@@ -182,7 +182,7 @@ function toCamelCase(str){
 }
 console.log(toCamelCase("the-stealth-warrior"));
 
-////Ex5.4 - To Weird Case 
+////Ex5.4 - To Weird Case  num15
 function toWeirdCase(str){
     let result ="";
     for (let i =0; i<str.length; i++){
@@ -197,7 +197,7 @@ function toWeirdCase(str){
 console.log(toWeirdCase("Weird string case"));
 
 
-////Ex5.5 - Abbreviate two words 
+////Ex5.5 - Abbreviate two words  num16
 function abbrevName(name){
     let result=name[0];
     for(let i=0; i<name.length; i++){
@@ -210,7 +210,7 @@ function abbrevName(name){
 console.log(abbrevName("Selan Abu Saleh"));
 
 
-////Ex5.6 - Mask
+////Ex5.6 - Mask num17
 function maskify(str){
     let result="";
     let size = str.length;
@@ -227,7 +227,7 @@ function maskify(str){
 console.log(maskify("Nananananananananananananananana Batman!"));
 
 
-////Ex5.7 - shortest words
+////Ex5.7 - shortest words  num18
 function shortestWord(str){
     let words = str.split(" ");
     let shortest = words[0];
@@ -241,7 +241,7 @@ function shortestWord(str){
 console.log(shortestWord("I love programming:)"));
 
 
-////Ex5.8 - shortest words version 2 
+////Ex5.8 - shortest words version 2   num19
 function shortestWordV2(str){
     let words = str.split(" ");
     let longest = words[0];
@@ -255,7 +255,7 @@ function shortestWordV2(str){
 }
 console.log(shortestWordV2("I love programming:)"));
 
-////Ex6.1- Mumbling
+////Ex6.1- Mumbling  num20
 function accum(str){
     let result ="";
     for (let i=0; i<str.length; i++){
@@ -271,3 +271,11 @@ function accum(str){
 
 }
 console.log(accum("abcd"));
+
+
+////Ex 8- Find the Perimeter of a Rectangle num21
+function findPerimete(length, width){
+    return 2*(length + width);
+}
+
+console.log(findPerimete(6,7));
