@@ -206,8 +206,22 @@ function abbrevName(name){
         }
     }
     return result;
+}
+console.log(abbrevName("Selan Abu Saleh"));
 
 
+////Ex5.6 - Mask
+function maskify(str){
+    let result="";
+    let size = str.length;
+    let s=size;
+
+   while(s>=4){
+    result +="#";
+    s-=1;
+   }
+   result+= str.slice(size-4,size)
+   return result;
 
 }
-console.log(abbrevName("Sam Harris"));
+console.log(maskify("Nananananananananananananananana Batman!"));
