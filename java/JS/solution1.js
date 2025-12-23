@@ -195,3 +195,19 @@ function toWeirdCase(str){
     return result;
 }
 console.log(toWeirdCase("Weird string case"));
+
+
+////Ex5.5 - Abbreviate two words 
+function abbrevName(name){
+    let result=name[0];
+    for(let i=0; i<name.length; i++){
+        if ( name[i]===" "){
+            result= result + "." + name[i+1]
+        }
+    }
+    return result;
+
+
+
+}
+console.log(abbrevName("Sam Harris"));
