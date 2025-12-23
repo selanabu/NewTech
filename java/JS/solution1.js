@@ -241,3 +241,16 @@ function shortestWord(str){
 console.log(shortestWord("I love programming:)"));
 
 
+////Ex5.8 - shortest words version 2 
+function shortestWordV2(str){
+    let words = str.split(" ");
+    let longest = words[0];
+    for (let i=1; i<words.length; i++){
+        if (words[i].length > longest.length){
+            longest = words[i];
+        }   
+    }
+    return longest;
+
+}
+console.log(shortestWordV2("I love programming:)"));
