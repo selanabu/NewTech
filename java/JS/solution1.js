@@ -254,3 +254,20 @@ function shortestWordV2(str){
 
 }
 console.log(shortestWordV2("I love programming:)"));
+
+////Ex6.1- Mumbling
+function accum(str){
+    let result ="";
+    for (let i=0; i<str.length; i++){
+        result += str[i].toUpperCase();
+        for (let j=0; j<i; j++){
+            result += str[i].toLowerCase();
+        }
+        if (i !== str.length -1){
+            result += "-";
+        }
+    }
+    return result;
+
+}
+console.log(accum("abcd"));
