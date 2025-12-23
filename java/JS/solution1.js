@@ -144,5 +144,25 @@ function Fibonacci(n) {
 }
 console.log(Fibonacci(6));
 
+////Ex4.2 - Tribonacci - 
+////function Tribonacci(n) 
 
 
+////Ex5.1 - trimming string 
+function TrimString(str){
+    let size = str.length;
+    str = str.slice(1, size - 1);
+    return str;
+}
+console.log(TrimString("SELAN"));
+
+////Ex5.2 - String Repeat 
+function repeatStr(n, str){
+    let  result ="";
+    while(n>0){
+        result+=str;
+        n--;
+    }
+    return result;
+}
+console.log(repeatStr(5, "Hello"));
