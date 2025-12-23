@@ -166,3 +166,32 @@ function repeatStr(n, str){
     return result;
 }
 console.log(repeatStr(5, "Hello"));
+
+////Ex5.3 - To Camel Case 
+function toCamelCase(str){
+    let result ="";
+    for (let i =0; i<str.length; i++){
+        if (str[i] === "-" || str[i] === "_"){
+            i++;
+            result += str[i].toUpperCase();
+        }else{
+            result += str[i];
+        }   
+    }
+    return result;
+}
+console.log(toCamelCase("the-stealth-warrior"));
+
+////Ex5.4 - To Weird Case 
+function toWeirdCase(str){
+    let result ="";
+    for (let i =0; i<str.length; i++){
+        if (i % 2 === 0){
+            result += str[i].toUpperCase();
+        }else{
+            result += str[i].toLowerCase();
+        }
+    }
+    return result;
+}
+console.log(toWeirdCase("Weird string case"));
