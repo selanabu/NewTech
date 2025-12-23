@@ -225,3 +225,19 @@ function maskify(str){
 
 }
 console.log(maskify("Nananananananananananananananana Batman!"));
+
+
+////Ex5.7 - shortest words
+function shortestWord(str){
+    let words = str.split(" ");
+    let shortest = words[0];
+    for (let i=1; i<words.length; i++){
+        if (words[i].length < shortest.length){
+            shortest = words[i];
+        }   
+    }
+    return shortest.length;
+}
+console.log(shortestWord("I love programming:)"));
+
+
